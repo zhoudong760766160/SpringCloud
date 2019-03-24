@@ -1,0 +1,13 @@
+server:
+  port: 8781
+
+#添加服务到注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+#声明服务名称
+spring:
+  application:
+    name: order-service
